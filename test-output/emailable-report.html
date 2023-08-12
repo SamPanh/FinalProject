@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">18</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">465.141</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">test.TestCases</td><td><a href="#m0">tc_02</a></td><td rowspan="1">1691840266789</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">tc_07</a></td><td rowspan="1">1691840358194</td><td rowspan="1">30702</td></tr><tr class="failedeven"><td><a href="#m2">tc_13</a></td><td rowspan="1">1691840515431</td><td rowspan="1">41255</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="18">test.TestCases</td><td><a href="#m3">tc_01</a></td><td rowspan="1">1691840265735</td><td rowspan="1">838</td></tr><tr class="passedeven"><td><a href="#m4">tc_03</a></td><td rowspan="1">1691840275362</td><td rowspan="1">6161</td></tr><tr class="passedeven"><td><a href="#m5">tc_04</a></td><td rowspan="1">1691840297949</td><td rowspan="1">9474</td></tr><tr class="passedeven"><td><a href="#m6">tc_05</a></td><td rowspan="1">1691840316022</td><td rowspan="1">12789</td></tr><tr class="passedeven"><td><a href="#m7">tc_06</a></td><td rowspan="1">1691840337461</td><td rowspan="1">11967</td></tr><tr class="passedeven"><td><a href="#m8">tc_08</a></td><td rowspan="1">1691840397275</td><td rowspan="1">25004</td></tr><tr class="passedeven"><td><a href="#m9">tc_09</a></td><td rowspan="1">1691840431046</td><td rowspan="1">9211</td></tr><tr class="passedeven"><td><a href="#m10">tc_10</a></td><td rowspan="1">1691840449195</td><td rowspan="1">7357</td></tr><tr class="passedeven"><td><a href="#m11">tc_11</a></td><td rowspan="1">1691840465274</td><td rowspan="1">11956</td></tr><tr class="passedeven"><td><a href="#m12">tc_12</a></td><td rowspan="1">1691840485995</td><td rowspan="1">20693</td></tr><tr class="passedeven"><td><a href="#m13">tc_14</a></td><td rowspan="1">1691840565479</td><td rowspan="1">13656</td></tr><tr class="passedeven"><td><a href="#m14">tc_15</a></td><td rowspan="1">1691840587981</td><td rowspan="1">9225</td></tr><tr class="passedeven"><td><a href="#m15">tc_16</a></td><td rowspan="1">1691840605871</td><td rowspan="1">11785</td></tr><tr class="passedeven"><td><a href="#m16">tc_17</a></td><td rowspan="1">1691840626340</td><td rowspan="1">10016</td></tr><tr class="passedeven"><td><a href="#m17">tc_18</a></td><td rowspan="1">1691840645032</td><td rowspan="1">12225</td></tr><tr class="passedeven"><td><a href="#m18">tc_19</a></td><td rowspan="1">1691840665877</td><td rowspan="1">8973</td></tr><tr class="passedeven"><td><a href="#m19">tc_20</a></td><td rowspan="1">1691840683657</td><td rowspan="1">15315</td></tr><tr class="passedeven"><td><a href="#m20">tc_21</a></td><td rowspan="1">1691840707589</td><td rowspan="1">13248</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">test.TestCases#tc_02</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Data Provider public static java.lang.Object[][] test.TestCases.getAccount() returned a null value
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.TestCases#tc_07</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case bị fail: tc_07</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@role=&quot;menuitem&quot; and contains(text(),&quot;Trackers&quot;)] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57425/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 490203d195cb463520a0bb3a5b64ccbd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at function.CommonFunction.click(CommonFunction.java:31)
+	at function.PerformacePageFunction.searchPerformnaceTrackers(PerformacePageFunction.java:63)
+	at test.TestCases.tc_07(TestCases.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.TestCases#tc_13</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case bị fail: tc_13</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@role=&quot;option&quot;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57554}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57554/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0168939d953b8305ded6df5ad82d260
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at function.CommonFunction.sendkeysDropdownList(CommonFunction.java:103)
+	at function.PerformacePageFunction.searchManagePerformanceReviews(PerformacePageFunction.java:110)
+	at test.TestCases.tc_13(TestCases.java:129)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.TestCases#tc_01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_01</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test.TestCases#tc_03</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_03</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test.TestCases#tc_04</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_04</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test.TestCases#tc_05</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_05</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test.TestCases#tc_06</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_06</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">test.TestCases#tc_08</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_08</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">test.TestCases#tc_09</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_09</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">test.TestCases#tc_10</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_10</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">test.TestCases#tc_11</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_11</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">test.TestCases#tc_12</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_12</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">test.TestCases#tc_14</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_14</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">test.TestCases#tc_15</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_15</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">test.TestCases#tc_16</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_16</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">test.TestCases#tc_17</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_17</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">test.TestCases#tc_18</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_18</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">test.TestCases#tc_19</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_19</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">test.TestCases#tc_20</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_20</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">test.TestCases#tc_21</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Đây là test case chạy thành công: tc_21</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

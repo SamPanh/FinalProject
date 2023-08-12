@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="18" failed="3" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Đây là đoạn khởi động auto test]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_01]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case bị fail: tc_02]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_03]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_04]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_05]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_06]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case bị fail: tc_07]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_08]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_09]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_10]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_11]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_12]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case bị fail: tc_13]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_14]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_15]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_16]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_17]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_18]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_19]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_20]]>
+    </line>
+    <line>
+      <![CDATA[Đây là test case chạy thành công: tc_21]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-08-12T18:37:35 ICT" name="Default suite" finished-at="2023-08-12T18:45:21 ICT" duration-ms="465141">
+    <groups>
+    </groups>
+    <test started-at="2023-08-12T18:37:35 ICT" name="Default test" finished-at="2023-08-12T18:45:21 ICT" duration-ms="465141">
+      <class name="test.TestCases">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:37:35 ICT" name="setUp" finished-at="2023-08-12T18:37:45 ICT" duration-ms="9778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_01()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:37:45 ICT" name="tc_01" finished-at="2023-08-12T18:37:46 ICT" duration-ms="838" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_01]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_01 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:37:46 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:37:46 ICT" duration-ms="195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_01 status=SUCCESS method=TestCases.tc_01()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_01]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method signature="tc_02(java.lang.String,java.lang.String)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:37:46 ICT" name="tc_02" data-provider="getAccount" finished-at="2023-08-12T18:37:46 ICT" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Data Provider public static java.lang.Object[][] test.TestCases.getAccount() returned a null value]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Data Provider public static java.lang.Object[][] test.TestCases.getAccount() returned a null value
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_02 -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:37:46 ICT" name="setUp" finished-at="2023-08-12T18:37:55 ICT" duration-ms="8563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_03()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:37:55 ICT" name="tc_03" finished-at="2023-08-12T18:38:01 ICT" duration-ms="6161" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_03]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_03 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:38:01 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:38:02 ICT" duration-ms="1120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_03 status=SUCCESS method=TestCases.tc_03()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_03]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:38:02 ICT" name="setUp" finished-at="2023-08-12T18:38:17 ICT" duration-ms="15301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_04()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:38:17 ICT" name="tc_04" finished-at="2023-08-12T18:38:27 ICT" duration-ms="9474" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_04]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_04 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:38:27 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:38:27 ICT" duration-ms="184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_04 status=SUCCESS method=TestCases.tc_04()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_04]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:38:27 ICT" name="setUp" finished-at="2023-08-12T18:38:36 ICT" duration-ms="8410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_05()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:38:36 ICT" name="tc_05" finished-at="2023-08-12T18:38:48 ICT" duration-ms="12789" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_05]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_05 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:38:48 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:38:48 ICT" duration-ms="141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_05 status=SUCCESS method=TestCases.tc_05()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_05]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:38:48 ICT" name="setUp" finished-at="2023-08-12T18:38:57 ICT" duration-ms="8504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_06()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:38:57 ICT" name="tc_06" finished-at="2023-08-12T18:39:09 ICT" duration-ms="11967" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_06]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_06 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:39:09 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:39:09 ICT" duration-ms="185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_06 status=SUCCESS method=TestCases.tc_06()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_06]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:39:09 ICT" name="setUp" finished-at="2023-08-12T18:39:18 ICT" duration-ms="8575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_07()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:39:18 ICT" name="tc_07" finished-at="2023-08-12T18:39:48 ICT" duration-ms="30702" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[@role="menuitem" and contains(text(),"Trackers")] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57425/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 490203d195cb463520a0bb3a5b64ccbd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@role="menuitem" and contains(text(),"Trackers")] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57425/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 490203d195cb463520a0bb3a5b64ccbd
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at function.CommonFunction.click(CommonFunction.java:31)
+at function.PerformacePageFunction.searchPerformnaceTrackers(PerformacePageFunction.java:63)
+at test.TestCases.tc_07(TestCases.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case bị fail: tc_07]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_07 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:39:48 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:39:49 ICT" duration-ms="125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_07 status=FAILURE method=TestCases.tc_07()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case bị fail: tc_07]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:39:49 ICT" name="setUp" finished-at="2023-08-12T18:39:57 ICT" duration-ms="8249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_08()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:39:57 ICT" name="tc_08" finished-at="2023-08-12T18:40:22 ICT" duration-ms="25004" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_08]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_08 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:40:22 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:40:22 ICT" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_08 status=SUCCESS method=TestCases.tc_08()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_08]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:40:22 ICT" name="setUp" finished-at="2023-08-12T18:40:31 ICT" duration-ms="8575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_09()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:40:31 ICT" name="tc_09" finished-at="2023-08-12T18:40:40 ICT" duration-ms="9211" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_09]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_09 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:40:40 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:40:40 ICT" duration-ms="171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_09 status=SUCCESS method=TestCases.tc_09()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_09]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:40:40 ICT" name="setUp" finished-at="2023-08-12T18:40:49 ICT" duration-ms="8759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_10()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:40:49 ICT" name="tc_10" finished-at="2023-08-12T18:40:56 ICT" duration-ms="7357" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_10]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_10 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:40:56 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:40:56 ICT" duration-ms="181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_10 status=SUCCESS method=TestCases.tc_10()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_10]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:40:56 ICT" name="setUp" finished-at="2023-08-12T18:41:05 ICT" duration-ms="8536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_11()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:41:05 ICT" name="tc_11" finished-at="2023-08-12T18:41:17 ICT" duration-ms="11956" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_11]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_11 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:41:17 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:41:17 ICT" duration-ms="176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_11 status=SUCCESS method=TestCases.tc_11()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_11]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:41:17 ICT" name="setUp" finished-at="2023-08-12T18:41:25 ICT" duration-ms="8584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_12()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:41:25 ICT" name="tc_12" finished-at="2023-08-12T18:41:46 ICT" duration-ms="20693" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_12]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_12 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:41:46 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:41:46 ICT" duration-ms="138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_12 status=SUCCESS method=TestCases.tc_12()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_12]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:41:46 ICT" name="setUp" finished-at="2023-08-12T18:41:55 ICT" duration-ms="8599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_13()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:41:55 ICT" name="tc_13" finished-at="2023-08-12T18:42:36 ICT" duration-ms="41255" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@role="option"] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57554}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57554/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0168939d953b8305ded6df5ad82d260]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@role="option"] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57554}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57554/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0168939d953b8305ded6df5ad82d260
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at function.CommonFunction.sendkeysDropdownList(CommonFunction.java:103)
+at function.PerformacePageFunction.searchManagePerformanceReviews(PerformacePageFunction.java:110)
+at test.TestCases.tc_13(TestCases.java:129)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case bị fail: tc_13]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_13 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:42:36 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:42:36 ICT" duration-ms="133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_13 status=FAILURE method=TestCases.tc_13()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case bị fail: tc_13]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:42:36 ICT" name="setUp" finished-at="2023-08-12T18:42:45 ICT" duration-ms="8653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_14()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:42:45 ICT" name="tc_14" finished-at="2023-08-12T18:42:59 ICT" duration-ms="13656" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_14]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_14 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:42:59 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:42:59 ICT" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_14 status=SUCCESS method=TestCases.tc_14()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_14]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:42:59 ICT" name="setUp" finished-at="2023-08-12T18:43:07 ICT" duration-ms="8664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_15()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:43:07 ICT" name="tc_15" finished-at="2023-08-12T18:43:17 ICT" duration-ms="9225" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_15]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_15 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:43:17 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:43:17 ICT" duration-ms="184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_15 status=SUCCESS method=TestCases.tc_15()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_15]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:43:17 ICT" name="setUp" finished-at="2023-08-12T18:43:25 ICT" duration-ms="8475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_16()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:43:25 ICT" name="tc_16" finished-at="2023-08-12T18:43:37 ICT" duration-ms="11785" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_16]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_16 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:43:37 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:43:37 ICT" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_16 status=SUCCESS method=TestCases.tc_16()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_16]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:43:37 ICT" name="setUp" finished-at="2023-08-12T18:43:46 ICT" duration-ms="8489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_17()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:43:46 ICT" name="tc_17" finished-at="2023-08-12T18:43:56 ICT" duration-ms="10016" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_17]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_17 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:43:56 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:43:56 ICT" duration-ms="184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_17 status=SUCCESS method=TestCases.tc_17()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_17]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:43:56 ICT" name="setUp" finished-at="2023-08-12T18:44:05 ICT" duration-ms="8486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_18()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:44:05 ICT" name="tc_18" finished-at="2023-08-12T18:44:17 ICT" duration-ms="12225" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_18]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_18 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:44:17 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:44:17 ICT" duration-ms="185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_18 status=SUCCESS method=TestCases.tc_18()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_18]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:44:17 ICT" name="setUp" finished-at="2023-08-12T18:44:25 ICT" duration-ms="8431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_19()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:44:25 ICT" name="tc_19" finished-at="2023-08-12T18:44:34 ICT" duration-ms="8973" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_19]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_19 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:44:34 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:44:35 ICT" duration-ms="178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_19 status=SUCCESS method=TestCases.tc_19()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_19]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:44:35 ICT" name="setUp" finished-at="2023-08-12T18:44:43 ICT" duration-ms="8623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_20()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:44:43 ICT" name="tc_20" finished-at="2023-08-12T18:44:58 ICT" duration-ms="15315" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_20]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_20 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:44:58 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:44:59 ICT" duration-ms="141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_20 status=SUCCESS method=TestCases.tc_20()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_20]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:44:59 ICT" name="setUp" finished-at="2023-08-12T18:45:07 ICT" duration-ms="8471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc_21()[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:45:07 ICT" name="tc_21" finished-at="2023-08-12T18:45:20 ICT" duration-ms="13248" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Đây là test case chạy thành công: tc_21]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_21 -->
+        <test-method is-config="true" signature="checkAfterMethod(org.testng.ITestResult)[pri:0, instance:test.TestCases@5be1d0a4]" started-at="2023-08-12T18:45:20 ICT" name="checkAfterMethod" finished-at="2023-08-12T18:45:21 ICT" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_21 status=SUCCESS method=TestCases.tc_21()[pri:0, instance:test.TestCases@5be1d0a4] output=Đây là test case chạy thành công: tc_21]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAfterMethod -->
+      </class> <!-- test.TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
