@@ -1,7 +1,10 @@
 package test;
 
+import org.testng.annotations.Test;
 import core.BaseTest;
 import core.ExcelUtils;
+import function.CommonFunction;
+import function.CommonFunction;
 import function.LoginFunction;
 import function.MainPageFunction;
 import function.PerformacePageFunction;
@@ -12,16 +15,25 @@ import org.testng.annotations.Test;
 
 @Listeners(TestListener.class)	
 public class TestCases extends BaseTest {
+	CommonFunction common;
     @DataProvider()
-    public static Object[][] getAccount() {
+    public static Object[][] getAccount() throws Exception {
         String path = "\"C:\\Users\\jinjh\\eclipse-workspace\\FinalProject\\src\\main\\java\\sources\\Login.xlsx\"";
         String sheetName = "Login";
         return ExcelUtils.getTableArray(path, sheetName, 0, 2);
     }
     @Test
-    public void tc_01 () throws InterruptedException {
+    public void tc_01 () throws Exception {
+    	ExcelUtils.openFile(".\\src\\main\\java\\sources\\TestData.xlsx", "Test Cases");
         LoginFunction loginFunction = new LoginFunction(driver);
         loginFunction.checkLoginPageItem();
+        ExcelUtils.setCellData(2, 6, common.getToastResult(null));
+		if(common.getToastResult(null).equals(ExcelUtils.getCellData(2, 5))) {
+			common.testCompleted(2, 7, true, "PASSED");
+		}else {
+			common.testCompleted(2, 7, false, "FAILED");
+		}
+		ExcelUtils.saveAndCloseFile(".\\orangelHRMFinalTest\\data\\TestData.xlsx");
     }
 
     @Test(dataProvider = "getAccount")

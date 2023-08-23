@@ -1,6 +1,8 @@
 package function;
 
 import core.BasePage;
+import core.ExcelUtils;
+
 import org.bouncycastle.pqc.crypto.newhope.NHOtherInfoGenerator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -17,7 +19,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CommonFunction extends BasePage {
-    public CommonFunction(WebDriver driver) {
+
+
+	public CommonFunction(WebDriver driver) {
         super(driver);
     }
 
@@ -108,4 +112,19 @@ public class CommonFunction extends BasePage {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         return element.getText();
     }
+	public String getToastResult(WebElement forgotpass) {
+		wait.until(ExpectedConditions.visibilityOf(forgotpass));
+		return forgotpass.getText();
+	}
+
+	public void testCompleted(int rolNum, int colNum, boolean isPassed, String message) throws Exception {
+		ExcelUtils.setCellData(rolNum, colNum, message);
+		if (isPassed) {
+			ExcelUtils.fillGreenColour(rolNum, colNum);
+		} else {
+			ExcelUtils.fillRedColour(rolNum, colNum);
+		}
+		Assert.assertTrue(isPassed);
+	}
+
 }
